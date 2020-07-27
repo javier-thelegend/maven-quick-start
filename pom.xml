@@ -7,11 +7,20 @@
 	<groupId>clinic.programmming</groupId>
 	<artifactId>example</artifactId>
 	<version>1.0</version>
+		
+	<!-- Son los jar de librerias externas puedes buscarlas aca por artifactId https://search.maven.org/artifact/org.apache.commons/commons-lang3/3.11/jar -->
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.8</version>
+		</dependency>
+	</dependencies>
   
-	<!--Agregar esta configuracion ya que por defecto tiene la version 1.5 de java y con esto se asigna la 1.8
-		Tomarla de aca: https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html -->
 	<build>
 		<plugins>
+			<!--Agregar esta configuracion ya que por defecto tiene la version 1.5 de java y con esto se asigna la 1.8
+			Tomarla de aca: https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
